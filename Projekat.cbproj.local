@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.672,C:\Users\User\Documents\Embarcadero\Studio\Projects\Sehbajraktarevic_Emina\Unit1.h=C:\Users\User\Documents\Embarcadero\Studio\Projects\Sehbajraktarevic_Emina\Aplikacija.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.056,C:\Users\User\Documents\Embarcadero\Studio\Projects\Sehbajraktarevic_Emina\Projekat.cbproj=C:\Users\User\Documents\Embarcadero\Studio\Projects\Sehbajraktarevic_Emina\Projekat.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.036,C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\User\Documents\Embarcadero\Studio\Projects\Sehbajraktarevic_Emina\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.062,C:\Users\User\Documents\Embarcadero\Studio\Projects\Sehbajraktarevic_Emina\Unit1.h=C:\Users\User\Documents\Embarcadero\Studio\Projects\Sehbajraktarevic_Emina\pomocna.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.672,C:\Users\User\Documents\Embarcadero\Studio\Projects\Sehbajraktarevic_Emina\Unit1.dfm=C:\Users\User\Documents\Embarcadero\Studio\Projects\Sehbajraktarevic_Emina\Aplikacija.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.036,C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit1.cpp=C:\Users\User\Documents\Embarcadero\Studio\Projects\Sehbajraktarevic_Emina\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.728,=C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.672,C:\Users\User\Documents\Embarcadero\Studio\Projects\Sehbajraktarevic_Emina\Unit1.cpp=C:\Users\User\Documents\Embarcadero\Studio\Projects\Sehbajraktarevic_Emina\Aplikacija.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.595,=C:\Users\User\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.003,C:\Users\User\Documents\Embarcadero\Studio\Projects\Project1PCH1.h=C:\Users\User\Documents\Embarcadero\Studio\Projects\Sehbajraktarevic_Emina\ProjekatPCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.062,C:\Users\User\Documents\Embarcadero\Studio\Projects\Sehbajraktarevic_Emina\Unit1.cpp=C:\Users\User\Documents\Embarcadero\Studio\Projects\Sehbajraktarevic_Emina\pomocna.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.068,C:\Users\User\Documents\Embarcadero\Studio\Projects\Project1.cbproj=C:\Users\User\Documents\Embarcadero\Studio\Projects\Sehbajraktarevic_Emina\Projekat.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.036,C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit1.h=C:\Users\User\Documents\Embarcadero\Studio\Projects\Sehbajraktarevic_Emina\Unit1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.697,=C:\Users\User\Documents\Embarcadero\Studio\Projects\Sehbajraktarevic_Emina\Unit1.cpp</Transaction>
+  </Transactions>
+</BorlandProject>

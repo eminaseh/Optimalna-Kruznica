@@ -1,0 +1,110 @@
+//---------------------------------------------------------------------------
+
+#ifndef pomocnaH
+#define pomocnaH
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.Graphics.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+#include <Vcl.ExtCtrls.hpp>
+#include <vector>
+
+using namespace std;
+
+struct Tacka {
+    double x, y;
+	Tacka(double x, double y): x(x), y(y){}
+	void Crtaj(TImage*, TColor boja = clRed);
+};
+
+//---------------------------------------------------------------------------
+
+bool operator<(Tacka, Tacka);
+bool operator==(Tacka, Tacka);
+int Orijentacija(Tacka, Tacka, Tacka);
+
+//---------------------------------------------------------------------------
+struct Kruznica {
+	Tacka centar;
+	double r;
+	Kruznica(Tacka centar, double r): centar(centar), r(r){}
+	void Crtaj(TImage*, TColor boja = clGreen);
+};
+//---------------------------------------------------------------------------
+
+//---------------------------------------------------------------------------
+
+struct Duz {
+    Tacka A,B;
+	Duz(Tacka A, Tacka B): A(A), B(B) {
+		if (B < A) {
+			swap(this->A, this->B);
+		}
+	}
+	void Crtaj(TImage*, TColor boja = clBlue);
+	bool horizontalna();
+	bool vertikalna();
+};
+
+//---------------------------------------------------------------------------
+
+struct Trougao {
+    Tacka A, B, C;
+    Trougao(Tacka A, Tacka B, Tacka C): A(A), B(B), C(C) {
+        if (Orijentacija(A, B, C) > 0) {
+            swap(B, C);
+        }
+    }
+
+};
+
+//---------------------------------------------------------------------------
+
+struct ManjePoXHorVer {
+	bool operator()(pair<Tacka, Duz*> prva, pair<Tacka, Duz*> druga) const {
+		return druga.first < prva.first;
+	}
+};
+//---------------------------------------------------------------------------
+
+struct HorDuziPoY {
+	bool operator()(Duz* prva, Duz* druga) const {
+		return prva->A.y < druga->A.y;
+	}
+};
+
+//---------------------------------------------------------------------------
+
+struct ManjePoXDuzi {
+	bool operator()(pair<Tacka, pair<Duz*, Duz*>> prva, pair<Tacka, pair<Duz*, Duz*>> druga) const {
+		return druga.first < prva.first;
+	}
+};
+
+//---------------------------------------------------------------------------
+
+struct DuziIznadIspod {
+	bool operator()(Duz* prva, Duz* druga) const {
+		if(druga->A.x > prva->A.x) {
+			return Orijentacija(prva->A, prva->B, druga->A) < 0;
+		}
+		else if(druga->A.x < prva->A.x) {
+			return Orijentacija(druga->A, druga->B, prva->A) > 0;
+		}
+		else {
+			return Orijentacija(prva->A, prva->B, druga->B) < 0;
+		}
+	}
+};
+
+//---------------------------------------------------------------------------
+bool daLiSeDuziSijeku(Duz, Duz);
+Tacka presjekPravih(Duz, Duz);
+bool daLiJeTackaUTrouglu(Tacka, Trougao);
+bool daLiJeTackaUKruznici(Tacka&, Kruznica&);
+int brojTacakaUKruznici(vector<Tacka>&, Kruznica&);
+
+
+#endif
